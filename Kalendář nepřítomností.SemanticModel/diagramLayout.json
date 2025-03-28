@@ -1,0 +1,74 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 854,
+            "y": 155
+          },
+          "nodeIndex": "DimKalendar",
+          "nodeLineageTag": "d98a0b2a-027c-4ebd-87c3-c3f701d22fa7",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 61,
+            "y": 201
+          },
+          "nodeIndex": "DimOsoby",
+          "nodeLineageTag": "2e53e51b-8778-443f-8a00-b16dd66039d4",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 492,
+            "y": 464
+          },
+          "nodeIndex": "NepritomnostZamestnancu",
+          "nodeLineageTag": "440253f9-6c39-4c61-88ef-2546e043336c",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 343,
+            "y": 0
+          },
+          "nodeIndex": "RLS_osoby_oddeleni",
+          "nodeLineageTag": "510fc388-a6b9-4cb0-aceb-de29d8d88175",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

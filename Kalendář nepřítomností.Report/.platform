@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Kalendář nepřítomností"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "dd086281-a0b2-4263-b3f4-36d9cab0c872"
+  }
+}

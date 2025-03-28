@@ -1,0 +1,7 @@
+role RLS_HS
+	modelPermission: read
+
+	tablePermission RLS_osoby_oddeleni = [Email] = USERPRINCIPALNAME()
+
+	annotation PBI_Id = fb7be437d6344e30ae0eb89249b9a2c6
+

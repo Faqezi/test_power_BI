@@ -1,0 +1,4053 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "3.5.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "dim_kalendar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim kalendar": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DimKalendar": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.datum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Datum"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datum": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_kalendar.ISO_rok": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "ISO Rok"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ISO rok": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.ISO_měsíc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "ISO Měsíc"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ISO měsíc": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.den_v_týdnu": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Den v týdnu"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "den v týdnu": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sett v týdnu": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "warren v týdnu": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "hole v týdnu": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "lair v týdnu": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "retreat v týdnu": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "burrow v týdnu": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "run v týdnu": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "earth v týdnu": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "nest v týdnu": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cave v týdnu": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.den_v_týdnu_název": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Den v týdnu název"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "den v týdnu název": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sett v týdnu název": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "warren v týdnu název": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "hole v týdnu název": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "lair v týdnu název": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "retreat v týdnu název": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "burrow v týdnu název": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "run v týdnu název": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "earth v týdnu název": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "nest v týdnu název": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cave v týdnu název": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.pololetí": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Pololetí"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pololetí": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.čtvrtletí": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Čtvrtletí"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "čtvrtletí": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.čtvrtletí_název": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Čtvrtletí název"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "čtvrtletí název": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.týden_v_roce": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Týden v roce"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "týden v roce": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.rok": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Rok"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rok": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.měsíc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Měsíc"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "měsíc": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.měsíc_název": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Měsíc název"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "měsíc název": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.měsíc_rok": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Měsíc rok"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "měsíc rok": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.měsíc_rok_int": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Měsíc rok int"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "měsíc rok int": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.den_v_měsíci": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Den v měsíci"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "den v měsíci": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sett v měsíci": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "warren v měsíci": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "hole v měsíci": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "lair v měsíci": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "retreat v měsíci": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "burrow v měsíci": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "run v měsíci": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "earth v měsíci": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "nest v měsíci": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cave v měsíci": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.den_v_roce": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Den v roce"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "den v roce": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sett v roce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "warren v roce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "hole v roce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "lair v roce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "retreat v roce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "burrow v roce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "run v roce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "earth v roce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "nest v roce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cave v roce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.druh_dne": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Druh dne"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "druh dne": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.druh_dne_název": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Druh dne název"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "druh dne název": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.rok_dyn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Rok dyn"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rok dyn": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.čtvrtletí_dyn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Čtvrtletí dyn"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "čtvrtletí dyn": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.pololetí_název_dyn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Pololetí název dyn"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pololetí název dyn": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.měsíc_název_dyn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Měsíc název dyn"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "měsíc název dyn": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.den_název_dyn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Den název dyn"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "den název dyn": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.týden_index": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Týden Index"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "týden index": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "týden directory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "týden catalogue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "týden catalog": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "týden guide": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "týden file": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "týden key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "týden table": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "týden manifestation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "týden pointer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "týden indication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.aktuální_týden_zpětně": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Aktuální týden zpětně"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "aktuální týden zpětně": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.skupina_po_4_týdnech": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Skupina po 4 týdnech"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "skupina po 4 týdnech": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.poslední_3_měsíce": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Poslední 3 měsíce"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "poslední 3 měsíce": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.l_1_3m": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "L13M"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "l 1 3m": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "L13M": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "3m": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "1 3m": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.l_1_2m": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "L12M"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "l 1 2m": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "L12M": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kalendar.sort_index_skup_4__týdnů": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimKalendar",
+			          "ConceptualProperty": "Sort Index Skup 4. týdnů"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sort index skup 4. týdnů": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_osoby": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim osoby": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DimOsoby": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_osoby.jméno": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "Jméno"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jméno": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_osoby.příjmení": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "Příjmení"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "příjmení": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_osoby.celé_jméno": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "Celé jméno"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "celé jméno": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_osoby.pohlaví": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "Pohlaví"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pohlaví": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_osoby.osobní_číslo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "Osobní číslo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "osobní číslo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_osoby.zaevidoval": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "Zaevidoval"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "zaevidoval": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_osoby.datum_zaevidování": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "Datum zaevidování"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datum zaevidování": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_osoby.aktivní_zaměstnanec": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "Aktivní zaměstnanec"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "aktivní zaměstnanec": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_osoby.platný_PPV": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "Platný PPV"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "platný PPV": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_osoby.typ_PPV__bit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "Typ PPV - bit"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "typ PPV - bit": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "typ PPV bit": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "typ ppv - moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "typ ppv - jiffy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "typ ppv - jiff": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "typ ppv moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "typ ppv jiffy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "typ ppv jiff": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "typ ppv - minute": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "typ ppv - while": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "typ ppv - little": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "typ ppv minute": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "dim_osoby.typ_PPV": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "Typ PPV"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "typ PPV": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_osoby.osoby__ENMON": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "Osoby - ENMON"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "osoby - ENMON": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "osoby ENMON": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "dim_osoby.osobní_číslo2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "Osobní číslo2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "osobní číslo2": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_osoby.max_datum_vzniku": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "MaxDatumVzniku"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max datum vzniku": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MaxDatumVzniku": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "maximum datum vzniku": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_osoby.max_datum_konce": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "MaxDatumKonce"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max datum konce": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MaxDatumKonce": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "maximum datum konce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_osoby.typ_kalendaře_dw_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "Typ Kalendaře Dw Id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "typ kalendaře dw id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "typ kalendaře dw identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "typ kalendaře dw identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "typ kalendaře dw identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "typ kalendaře dw credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "dim_osoby.realizator_dw_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "Realizator Dw Id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "realizator dw id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "realizator dw identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "realizator dw identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "realizator dw identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "realizator dw credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "dim_osoby.název_hospodářského_střediska": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimOsoby",
+			          "ConceptualProperty": "Název hospodářského střediska"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "název hospodářského střediska": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "nepritomnost_zamestnancu": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "NepritomnostZamestnancu"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nepritomnost zamestnancu": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NepritomnostZamestnancu": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "nepritomnost_zamestnancu.počáteční_datum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "NepritomnostZamestnancu",
+			          "ConceptualProperty": "Počáteční datum"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "počáteční datum": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "nepritomnost_zamestnancu.datum_od": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "NepritomnostZamestnancu",
+			          "ConceptualProperty": "Datum Od"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datum od": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "nepritomnost_zamestnancu.datum_do": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "NepritomnostZamestnancu",
+			          "ConceptualProperty": "Datum do"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datum do": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "nepritomnost_zamestnancu.osoba_dw_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "NepritomnostZamestnancu",
+			          "ConceptualProperty": "Osoba Dw Id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "osoba dw id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "osoba dw identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "osoba dw identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "osoba dw identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "osoba dw credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "nepritomnost_zamestnancu.popis_nepřítomnosti": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "NepritomnostZamestnancu",
+			          "ConceptualProperty": "Popis nepřítomnosti"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "popis nepřítomnosti": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "nepritomnost_zamestnancu.popis": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "NepritomnostZamestnancu",
+			          "ConceptualProperty": "Popis"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "popis": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "nepritomnost_zamestnancu.display_popis": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "NepritomnostZamestnancu",
+			          "ConceptualProperty": "Display popis"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "display popis": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "nepritomnost_zamestnancu.název_stavu_žádosti": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "NepritomnostZamestnancu",
+			          "ConceptualProperty": "Název stavu žádosti"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "název stavu žádosti": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "nepritomnost_zamestnancu.stav_úkonu": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "NepritomnostZamestnancu",
+			          "ConceptualProperty": "Stav úkonu"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stav úkonu": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "RLS_osoby_oddeleni": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RLS_osoby_oddeleni"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "RLS osoby oddeleni": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RL osoby oddeleni": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "RLS_osoby_oddeleni": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "RLS_osoby_oddeleni.email": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RLS_osoby_oddeleni",
+			          "ConceptualProperty": "Email"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "email": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "correspondence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "message": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "communication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "RLS_osoby_oddeleni.osoba_dw_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RLS_osoby_oddeleni",
+			          "ConceptualProperty": "Osoba Dw Id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "osoba dw id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "osoba dw identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "osoba dw identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "osoba dw identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "osoba dw credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "RLS_osoby_oddeleni.celé_jméno_pozorovaný": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RLS_osoby_oddeleni",
+			          "ConceptualProperty": "Celé jméno pozorovaný"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "celé jméno pozorovaný": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "RLS_osoby_oddeleni.název_hospodářského_střediska": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RLS_osoby_oddeleni",
+			          "ConceptualProperty": "Název hospodářského střediska"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "název hospodářského střediska": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "harmonogramvyjezdu.stav_úkonu": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "HarmonogramVyjezdu",
+			          "ConceptualProperty": "Stav úkonu"
+			        }
+			      },
+			      "State": "Generated"
+			    }
+			  },
+			  "Relationships": {
+			    "dim_kalendar_dens_v_den_v_týdnu_název": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.den_v_týdnu_název": {
+			          "Target": {
+			            "Entity": "dim_kalendar.den_v_týdnu_název"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Verbs": [
+			              {
+			                "den": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "PrepositionalPhrases": [
+			              {
+			                "Prepositions": [
+			                  {
+			                    "v": {
+			                      "State": "Generated"
+			                    }
+			                  }
+			                ],
+			                "Object": {
+			                  "Role": "dim_kalendar.den_v_týdnu_název"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.95,
+			          "ID": "dim_kalendars_den_v_den_v_týdnu_název"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.den_v_týdnu_název"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_den_v_týdnu_název"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_datum": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.datum": {
+			          "Target": {
+			            "Entity": "dim_kalendar.datum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.datum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_data"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_ISO_rok": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.ISO_rok": {
+			          "Target": {
+			            "Entity": "dim_kalendar.ISO_rok"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.ISO_rok"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_ISO_roks"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_ISO_měsíc": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.ISO_měsíc": {
+			          "Target": {
+			            "Entity": "dim_kalendar.ISO_měsíc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.ISO_měsíc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_ISO_měsícs"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_den_v_týdnu": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.den_v_týdnu": {
+			          "Target": {
+			            "Entity": "dim_kalendar.den_v_týdnu"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.den_v_týdnu"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_den_v_týdnu"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_pololetí": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.pololetí": {
+			          "Target": {
+			            "Entity": "dim_kalendar.pololetí"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.pololetí"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_pololetí"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_čtvrtletí": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.čtvrtletí": {
+			          "Target": {
+			            "Entity": "dim_kalendar.čtvrtletí"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.čtvrtletí"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_čtvrtletí"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_čtvrtletí_název": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.čtvrtletí_název": {
+			          "Target": {
+			            "Entity": "dim_kalendar.čtvrtletí_název"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.čtvrtletí_název"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_čtvrtletí_názevs"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_týden_v_roce": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.týden_v_roce": {
+			          "Target": {
+			            "Entity": "dim_kalendar.týden_v_roce"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.týden_v_roce"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_týden_v_roce"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_rok": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.rok": {
+			          "Target": {
+			            "Entity": "dim_kalendar.rok"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.rok"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_roks"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_měsíc": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.měsíc": {
+			          "Target": {
+			            "Entity": "dim_kalendar.měsíc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.měsíc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_měsícs"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_měsíc_název": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.měsíc_název": {
+			          "Target": {
+			            "Entity": "dim_kalendar.měsíc_název"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.měsíc_název"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_měsíc_názevs"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_měsíc_rok": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.měsíc_rok": {
+			          "Target": {
+			            "Entity": "dim_kalendar.měsíc_rok"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.měsíc_rok"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_měsíc_roks"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_měsíc_rok_int": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.měsíc_rok_int": {
+			          "Target": {
+			            "Entity": "dim_kalendar.měsíc_rok_int"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.měsíc_rok_int"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_měsíc_rok_ints"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_den_v_měsíci": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.den_v_měsíci": {
+			          "Target": {
+			            "Entity": "dim_kalendar.den_v_měsíci"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.den_v_měsíci"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_den_v_měsíci"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_den_v_roce": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.den_v_roce": {
+			          "Target": {
+			            "Entity": "dim_kalendar.den_v_roce"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.den_v_roce"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_den_v_roce"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_druh_dne": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.druh_dne": {
+			          "Target": {
+			            "Entity": "dim_kalendar.druh_dne"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.druh_dne"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_druh_dnes"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_druh_dne_název": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.druh_dne_název": {
+			          "Target": {
+			            "Entity": "dim_kalendar.druh_dne_název"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.druh_dne_název"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_druh_dne_názevs"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_rok_dyn": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.rok_dyn": {
+			          "Target": {
+			            "Entity": "dim_kalendar.rok_dyn"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.rok_dyn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_rok_dyns"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_čtvrtletí_dyn": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.čtvrtletí_dyn": {
+			          "Target": {
+			            "Entity": "dim_kalendar.čtvrtletí_dyn"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.čtvrtletí_dyn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_čtvrtletí_dyns"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_pololetí_název_dyn": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.pololetí_název_dyn": {
+			          "Target": {
+			            "Entity": "dim_kalendar.pololetí_název_dyn"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.pololetí_název_dyn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_pololetí_název_dyns"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_měsíc_název_dyn": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.měsíc_název_dyn": {
+			          "Target": {
+			            "Entity": "dim_kalendar.měsíc_název_dyn"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.měsíc_název_dyn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_měsíc_název_dyns"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_den_název_dyn": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.den_název_dyn": {
+			          "Target": {
+			            "Entity": "dim_kalendar.den_název_dyn"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.den_název_dyn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_den_název_dyns"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_týden_index": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.týden_index": {
+			          "Target": {
+			            "Entity": "dim_kalendar.týden_index"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.týden_index"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_týden_indices"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_aktuální_týden_zpětně": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.aktuální_týden_zpětně": {
+			          "Target": {
+			            "Entity": "dim_kalendar.aktuální_týden_zpětně"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.aktuální_týden_zpětně"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_aktuální_týden_zpětně"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_skupina_po_4_týdnech": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.skupina_po_4_týdnech": {
+			          "Target": {
+			            "Entity": "dim_kalendar.skupina_po_4_týdnech"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.skupina_po_4_týdnech"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_skupina_po_4_týdneches"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_poslední_3_měsíce": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.poslední_3_měsíce": {
+			          "Target": {
+			            "Entity": "dim_kalendar.poslední_3_měsíce"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.poslední_3_měsíce"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_poslední_3_měsíces"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_l_1_3m": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.l_1_3m": {
+			          "Target": {
+			            "Entity": "dim_kalendar.l_1_3m"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.l_1_3m"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_l_1_3m"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_l_1_2m": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.l_1_2m": {
+			          "Target": {
+			            "Entity": "dim_kalendar.l_1_2m"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.l_1_2m"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_l_1_2ms"
+			        }
+			      ]
+			    },
+			    "dim_kalendar_has_sort_index_skup_4__týdnů": {
+			      "Binding": {
+			        "ConceptualEntity": "DimKalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        },
+			        "dim_kalendar.sort_index_skup_4__týdnů": {
+			          "Target": {
+			            "Entity": "dim_kalendar.sort_index_skup_4__týdnů"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar.sort_index_skup_4__týdnů"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_sort_index_skup_4__týdnů"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_jméno": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.jméno": {
+			          "Target": {
+			            "Entity": "dim_osoby.jméno"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.jméno"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_jménos"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_příjmení": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.příjmení": {
+			          "Target": {
+			            "Entity": "dim_osoby.příjmení"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.příjmení"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_příjmení"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_celé_jméno": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.celé_jméno": {
+			          "Target": {
+			            "Entity": "dim_osoby.celé_jméno"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.celé_jméno"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_celé_jménos"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_pohlaví": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.pohlaví": {
+			          "Target": {
+			            "Entity": "dim_osoby.pohlaví"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.pohlaví"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_pohlaví"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_osobní_číslo": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.osobní_číslo": {
+			          "Target": {
+			            "Entity": "dim_osoby.osobní_číslo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.osobní_číslo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_osobní_číslos"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_zaevidoval": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.zaevidoval": {
+			          "Target": {
+			            "Entity": "dim_osoby.zaevidoval"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.zaevidoval"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_zaevidovals"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_datum_zaevidování": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.datum_zaevidování": {
+			          "Target": {
+			            "Entity": "dim_osoby.datum_zaevidování"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.datum_zaevidování"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_datum_zaevidování"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_aktivní_zaměstnanec": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.aktivní_zaměstnanec": {
+			          "Target": {
+			            "Entity": "dim_osoby.aktivní_zaměstnanec"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.aktivní_zaměstnanec"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_aktivní_zaměstnanecs"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_platný_PPV": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.platný_PPV": {
+			          "Target": {
+			            "Entity": "dim_osoby.platný_PPV"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.platný_PPV"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_platný_PPVs"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_typ_PPV__bit": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.typ_PPV__bit": {
+			          "Target": {
+			            "Entity": "dim_osoby.typ_PPV__bit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.typ_PPV__bit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_typ_PPV__bits"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_typ_PPV": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.typ_PPV": {
+			          "Target": {
+			            "Entity": "dim_osoby.typ_PPV"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.typ_PPV"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_typ_PPVs"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_osoby__ENMON": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.osoby__ENMON": {
+			          "Target": {
+			            "Entity": "dim_osoby.osoby__ENMON"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.osoby__ENMON"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_osoby__ENMONs"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_osobní_číslo2": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.osobní_číslo2": {
+			          "Target": {
+			            "Entity": "dim_osoby.osobní_číslo2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.osobní_číslo2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_osobní_číslo2"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_max_datum_vzniku": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.max_datum_vzniku": {
+			          "Target": {
+			            "Entity": "dim_osoby.max_datum_vzniku"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.max_datum_vzniku"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_max_datum_vznikus"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_max_datum_konce": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.max_datum_konce": {
+			          "Target": {
+			            "Entity": "dim_osoby.max_datum_konce"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.max_datum_konce"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_max_datum_konces"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_typ_kalendaře_dw_id": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.typ_kalendaře_dw_id": {
+			          "Target": {
+			            "Entity": "dim_osoby.typ_kalendaře_dw_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.typ_kalendaře_dw_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_typ_kalendaře_dw_ids"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_název_hospodářského_střediska": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "dim_osoby.název_hospodářského_střediska": {
+			          "Target": {
+			            "Entity": "dim_osoby.název_hospodářského_střediska"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby.název_hospodářského_střediska"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_název_hospodářského_střediskas"
+			        }
+			      ]
+			    },
+			    "nepritomnost_zamestnancu_has_datum_od": {
+			      "Binding": {
+			        "ConceptualEntity": "NepritomnostZamestnancu"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nepritomnost_zamestnancu": {
+			          "Target": {
+			            "Entity": "nepritomnost_zamestnancu"
+			          }
+			        },
+			        "nepritomnost_zamestnancu.datum_od": {
+			          "Target": {
+			            "Entity": "nepritomnost_zamestnancu.datum_od"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nepritomnost_zamestnancu"
+			            },
+			            "Object": {
+			              "Role": "nepritomnost_zamestnancu.datum_od"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nepritomnost_zamestnancus_have_datum_od"
+			        }
+			      ]
+			    },
+			    "nepritomnost_zamestnancu_has_datum_do": {
+			      "Binding": {
+			        "ConceptualEntity": "NepritomnostZamestnancu"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nepritomnost_zamestnancu": {
+			          "Target": {
+			            "Entity": "nepritomnost_zamestnancu"
+			          }
+			        },
+			        "nepritomnost_zamestnancu.datum_do": {
+			          "Target": {
+			            "Entity": "nepritomnost_zamestnancu.datum_do"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nepritomnost_zamestnancu"
+			            },
+			            "Object": {
+			              "Role": "nepritomnost_zamestnancu.datum_do"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nepritomnost_zamestnancus_have_datum_dos"
+			        }
+			      ]
+			    },
+			    "nepritomnost_zamestnancu_has_popis_nepřítomnosti": {
+			      "Binding": {
+			        "ConceptualEntity": "NepritomnostZamestnancu"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nepritomnost_zamestnancu": {
+			          "Target": {
+			            "Entity": "nepritomnost_zamestnancu"
+			          }
+			        },
+			        "nepritomnost_zamestnancu.popis_nepřítomnosti": {
+			          "Target": {
+			            "Entity": "nepritomnost_zamestnancu.popis_nepřítomnosti"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nepritomnost_zamestnancu"
+			            },
+			            "Object": {
+			              "Role": "nepritomnost_zamestnancu.popis_nepřítomnosti"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nepritomnost_zamestnancus_have_popis_nepřítomnostis"
+			        }
+			      ]
+			    },
+			    "nepritomnost_zamestnancu_has_popis": {
+			      "Binding": {
+			        "ConceptualEntity": "NepritomnostZamestnancu"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nepritomnost_zamestnancu": {
+			          "Target": {
+			            "Entity": "nepritomnost_zamestnancu"
+			          }
+			        },
+			        "nepritomnost_zamestnancu.popis": {
+			          "Target": {
+			            "Entity": "nepritomnost_zamestnancu.popis"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nepritomnost_zamestnancu"
+			            },
+			            "Object": {
+			              "Role": "nepritomnost_zamestnancu.popis"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nepritomnost_zamestnancus_have_popises"
+			        }
+			      ]
+			    },
+			    "nepritomnost_zamestnancu_has_display_popis": {
+			      "Binding": {
+			        "ConceptualEntity": "NepritomnostZamestnancu"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nepritomnost_zamestnancu": {
+			          "Target": {
+			            "Entity": "nepritomnost_zamestnancu"
+			          }
+			        },
+			        "nepritomnost_zamestnancu.display_popis": {
+			          "Target": {
+			            "Entity": "nepritomnost_zamestnancu.display_popis"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nepritomnost_zamestnancu"
+			            },
+			            "Object": {
+			              "Role": "nepritomnost_zamestnancu.display_popis"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nepritomnost_zamestnancus_have_display_popises"
+			        }
+			      ]
+			    },
+			    "nepritomnost_zamestnancu_has_název_stavu_žádosti": {
+			      "Binding": {
+			        "ConceptualEntity": "NepritomnostZamestnancu"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nepritomnost_zamestnancu": {
+			          "Target": {
+			            "Entity": "nepritomnost_zamestnancu"
+			          }
+			        },
+			        "nepritomnost_zamestnancu.název_stavu_žádosti": {
+			          "Target": {
+			            "Entity": "nepritomnost_zamestnancu.název_stavu_žádosti"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nepritomnost_zamestnancu"
+			            },
+			            "Object": {
+			              "Role": "nepritomnost_zamestnancu.název_stavu_žádosti"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nepritomnost_zamestnancus_have_název_stavu_žádostis"
+			        }
+			      ]
+			    },
+			    "nepritomnost_zamestnancu_has_stav_úkonu": {
+			      "Binding": {
+			        "ConceptualEntity": "NepritomnostZamestnancu"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nepritomnost_zamestnancu": {
+			          "Target": {
+			            "Entity": "nepritomnost_zamestnancu"
+			          }
+			        },
+			        "nepritomnost_zamestnancu.stav_úkonu": {
+			          "Target": {
+			            "Entity": "nepritomnost_zamestnancu.stav_úkonu"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nepritomnost_zamestnancu"
+			            },
+			            "Object": {
+			              "Role": "nepritomnost_zamestnancu.stav_úkonu"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nepritomnost_zamestnancus_have_stav_úkonus"
+			        }
+			      ]
+			    },
+			    "RLS_osoby_oddeleni_has_email": {
+			      "Binding": {
+			        "ConceptualEntity": "RLS_osoby_oddeleni"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RLS_osoby_oddeleni": {
+			          "Target": {
+			            "Entity": "RLS_osoby_oddeleni"
+			          }
+			        },
+			        "RLS_osoby_oddeleni.email": {
+			          "Target": {
+			            "Entity": "RLS_osoby_oddeleni.email"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RLS_osoby_oddeleni"
+			            },
+			            "Object": {
+			              "Role": "RLS_osoby_oddeleni.email"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RLS_osoby_oddelenis_have_emails"
+			        }
+			      ]
+			    },
+			    "RLS_osoby_oddeleni_has_celé_jméno_pozorovaný": {
+			      "Binding": {
+			        "ConceptualEntity": "RLS_osoby_oddeleni"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RLS_osoby_oddeleni": {
+			          "Target": {
+			            "Entity": "RLS_osoby_oddeleni"
+			          }
+			        },
+			        "RLS_osoby_oddeleni.celé_jméno_pozorovaný": {
+			          "Target": {
+			            "Entity": "RLS_osoby_oddeleni.celé_jméno_pozorovaný"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RLS_osoby_oddeleni"
+			            },
+			            "Object": {
+			              "Role": "RLS_osoby_oddeleni.celé_jméno_pozorovaný"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RLS_osoby_oddelenis_have_celé_jméno_pozorovaný"
+			        }
+			      ]
+			    },
+			    "RLS_osoby_oddeleni_has_název_hospodářského_střediska": {
+			      "Binding": {
+			        "ConceptualEntity": "RLS_osoby_oddeleni"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RLS_osoby_oddeleni": {
+			          "Target": {
+			            "Entity": "RLS_osoby_oddeleni"
+			          }
+			        },
+			        "RLS_osoby_oddeleni.název_hospodářského_střediska": {
+			          "Target": {
+			            "Entity": "RLS_osoby_oddeleni.název_hospodářského_střediska"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RLS_osoby_oddeleni"
+			            },
+			            "Object": {
+			              "Role": "RLS_osoby_oddeleni.název_hospodářského_střediska"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RLS_osoby_oddelenis_have_název_hospodářského_střediskas"
+			        }
+			      ]
+			    },
+			    "dim_osoby_has_RLS_osoby_oddeleni": {
+			      "Binding": {
+			        "ConceptualEntity": "DimOsoby"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        },
+			        "RLS_osoby_oddeleni": {
+			          "Target": {
+			            "Entity": "RLS_osoby_oddeleni"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "RLS_osoby_oddeleni"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_RLS_osoby_oddelenis"
+			        }
+			      ]
+			    },
+			    "nepritomnost_zamestnancu_has_dim_osoby": {
+			      "Binding": {
+			        "ConceptualEntity": "NepritomnostZamestnancu"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nepritomnost_zamestnancu": {
+			          "Target": {
+			            "Entity": "nepritomnost_zamestnancu"
+			          }
+			        },
+			        "dim_osoby": {
+			          "Target": {
+			            "Entity": "dim_osoby"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nepritomnost_zamestnancu"
+			            },
+			            "Object": {
+			              "Role": "dim_osoby"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nepritomnost_zamestnancus_have_dim_osobies"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_osoby"
+			            },
+			            "Object": {
+			              "Role": "nepritomnost_zamestnancu"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_osobies_have_nepritomnost_zamestnancus"
+			        }
+			      ]
+			    },
+			    "nepritomnost_zamestnancu_has_dim_kalendar": {
+			      "Binding": {
+			        "ConceptualEntity": "NepritomnostZamestnancu"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nepritomnost_zamestnancu": {
+			          "Target": {
+			            "Entity": "nepritomnost_zamestnancu"
+			          }
+			        },
+			        "dim_kalendar": {
+			          "Target": {
+			            "Entity": "dim_kalendar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nepritomnost_zamestnancu"
+			            },
+			            "Object": {
+			              "Role": "dim_kalendar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nepritomnost_zamestnancus_have_dim_kalendars"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kalendar"
+			            },
+			            "Object": {
+			              "Role": "nepritomnost_zamestnancu"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kalendars_have_nepritomnost_zamestnancus"
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

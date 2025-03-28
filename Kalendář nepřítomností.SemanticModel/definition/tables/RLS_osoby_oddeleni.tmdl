@@ -1,0 +1,221 @@
+table RLS_osoby_oddeleni
+	lineageTag: 510fc388-a6b9-4cb0-aceb-de29d8d88175
+
+	column Email
+		dataType: string
+		lineageTag: 42974acf-b397-4e8b-8858-7d059adad415
+		summarizeBy: none
+		sourceColumn: Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Osoba Dw Id'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 357e6e06-c2ac-416c-b760-ff55a25a7f9f
+		summarizeBy: none
+		sourceColumn: Osoba Dw Id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Celé jméno pozorovaný'
+		dataType: string
+		lineageTag: a268f0b6-8cd0-4b62-90fb-619d92ab3bc0
+		summarizeBy: none
+		sourceColumn: Celé jméno pozorovaný
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Název hospodářského střediska'
+		dataType: string
+		lineageTag: 93b1ca53-21d3-4fcd-b089-057e3f00bfaf
+		summarizeBy: none
+		sourceColumn: Název hospodářského střediska
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RLS_osoby_oddeleni = m
+		mode: import
+		source = ```
+				let
+				    Source = Sql.Database(pServer, pDatabase, [Query="
+				WITH AktualniPPV AS (
+				    SELECT 
+				        [Osoba IC],
+				        [Celé jméno],
+				        [Osobní číslo],
+				        MAX([Datum vzniku PPV]) AS MaxDatumVzniku,
+				        MAX([Datum konce PPV]) AS MaxDatumKonce
+				    FROM 
+				        [QI].[general].[PPV k vlastní organizaci]
+				    GROUP BY 
+				        [Osoba IC],
+				        [Celé jméno],
+				        [Osobní číslo]
+				),
+				VedouciStredisek AS (
+				    SELECT 
+				        'Energetické poradenství' AS Stredisko,
+				        'lisztwanova@pkv.cz' AS EmailVedouciho
+				    UNION ALL
+				    SELECT 
+				        'Místní šetření' AS Stredisko,
+				        'lisztwanova@pkv.cz' AS EmailVedouciho
+				    UNION ALL
+				    SELECT 
+				        'Řízení projektů' AS Stredisko,
+				        'kucharikova@pkv.cz' AS EmailVedouciho
+				    UNION ALL
+				    SELECT 
+				        'Dotace' AS Stredisko,
+				        'odvarkova@pkv.cz' AS EmailVedouciho
+				    UNION ALL
+				    SELECT 
+				        'Projektování FVE' AS Stredisko,
+				        'odvarkova@pkv.cz' AS EmailVedouciho
+				    UNION ALL
+				    SELECT 
+				        'Marketing' AS Stredisko,
+				        'filous@pkv.cz' AS EmailVedouciho
+				    UNION ALL
+				    SELECT 
+				        'Rozvoj obchodu' AS Stredisko,
+				        'korolov@pkv.cz' AS EmailVedouciho
+				    UNION ALL
+				    SELECT 
+				        'Podpora obchodu' AS Stredisko,
+				        'valesova@pkv.cz' AS EmailVedouciho
+				    UNION ALL
+				    SELECT 
+				        'Obchod - interní služba' AS Stredisko,
+				        'valesova@pkv.cz' AS EmailVedouciho
+				    UNION ALL
+				    SELECT 
+				        'IT' AS Stredisko,
+				        'spanihel@pkv.cz' AS EmailVedouciho
+				    UNION ALL
+				    SELECT 
+				        'Školení a vývoj produktů' AS Stredisko,
+				        'spanihel@pkv.cz' AS EmailVedouciho
+				    UNION ALL
+				    SELECT 
+				        'Výzkum a vývoj' AS Stredisko,
+				        'spanihel@pkv.cz' AS EmailVedouciho
+				    UNION ALL
+				    SELECT 
+				        'Obchod' AS Stredisko,
+				        'macho@pkv.cz' AS EmailVedouciho
+				    UNION ALL
+				    SELECT 
+				        'Rozvoj obchodu' AS Stredisko,
+				        'macho@pkv.cz' AS EmailVedouciho
+				    UNION ALL
+				    SELECT 
+				        'Obchod - interní služba' AS Stredisko,
+				        'macho@pkv.cz' AS EmailVedouciho
+				    UNION ALL
+				    SELECT 
+				        'Podpora obchodu' AS Stredisko,
+				        'macho@pkv.cz' AS EmailVedouciho
+				    UNION ALL
+				    SELECT 
+				        'Obchod - externí služba' AS Stredisko,
+				        'macho@pkv.cz' AS EmailVedouciho
+				),
+				AktualniTyp AS (
+				    SELECT 
+				        [Osoba IC],
+				        [Celé jméno],
+				        [Osobní číslo],
+				        [Datum vzniku PPV],
+				        [Datum konce PPV],
+				        [Platný PPV],
+				        [Typ PPV],
+				        [Typ PPV - bit],
+				        ROW_NUMBER() OVER (PARTITION BY [Osoba IC] ORDER BY [Typ PPV] DESC) AS [kontrola aktuálnosti]
+				    FROM 
+				        [QI].[general].[PPV k vlastní organizaci] 
+				    WHERE 
+				        [Platný PPV] = 1
+				),
+				EmailoveAdresy AS (
+				    SELECT 
+					PPVALL.[Celé jméno],
+				        [Příjmení],
+				        CONCAT(
+				            LOWER(
+				                TRANSLATE(
+				                    [Příjmení], 
+				                    'áéíóúýčďěňřšťžÁÉÍÓÚÝČĎĚŇŘŠŤŽ', 
+				                    'aeiouycdenrstzAEIOUYCDENRSTZ'
+				                )
+				            ), 
+				            '@pkv.cz'
+				        ) AS Email,
+				        [Aktivní zaměstnanec],
+				        PPVALL.[Platný PPV],
+				        PPVALL.[Typ PPV - bit],
+				        PPVALL.[Typ PPV],
+				        PPVALL.[Osobní číslo],
+				        HS.[Název hospodářského střediska],
+				        PPVALL.[Osoba IC]
+				    FROM 
+				        [QI].[general].[Osoby] AS OS
+				    LEFT JOIN 
+				        [QI].[dbo].[Hospodářská střediska] AS HS ON HS.[Hospodářské středisko] = OS.[Hospodářské středisko]
+				    LEFT JOIN 
+				        AktualniTyp AS PPVALL ON PPVALL.[Osoba IC] = OS.[ic] AND PPVALL.[kontrola aktuálnosti] = 1
+				    WHERE 
+				        [Aktivní zaměstnanec] = '1'
+				),
+				ZamestnanciVeStredisku AS (
+				    SELECT 
+					[Celé jméno] as [Celé jméno pozorovaný],
+				        EA.[Osobní číslo] AS OsobniCisloZamestnance,
+				        EA.[Název hospodářského střediska],
+				        LM.EmailVedouciho AS [Email],
+				        EA.[Osoba IC] as [Osoba Dw Id]
+				    FROM 
+				        EmailoveAdresy AS EA
+				    INNER JOIN 
+				        VedouciStredisek AS LM ON EA.[Název hospodářského střediska] = LM.Stredisko
+				), 
+				AudienceVramciHS AS (
+				SELECT CRA.[Celé jméno] AS [Celé jméno pozorovatel],
+						CRA.[Email],
+						CRB.[Osoba IC] AS [Osoba Dw Id],
+						CRB.[Osobní číslo],
+						CRB.[Název hospodářského střediska],
+						CRB.[Celé jméno] AS [Celé jméno pozorovaný]
+				FROM EmailoveAdresy CRB
+				JOIN  EmailoveAdresy as CRA
+					ON CRA.[Název hospodářského střediska] = CRB.[Název hospodářského střediska]
+				)
+				Select 
+				
+				[Email],
+				[Osoba Dw Id],
+				[Celé jméno pozorovaný],
+				[Název hospodářského střediska]
+				FROM AudienceVramciHS
+				
+				Union ALL
+				Select 
+				[Email],
+				[Osoba Dw Id],
+				[Celé jméno pozorovaný],
+				[Název hospodářského střediska]
+				FROM ZamestnanciVeStredisku;
+				", CreateNavigationProperties=false]),
+				    #"Replaced Value" = Table.ReplaceValue(Source,"jetelinova@pkv.cz","lisztwanova@pkv.cz",Replacer.ReplaceText,{"Email"})
+				in
+				    #"Replaced Value"
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

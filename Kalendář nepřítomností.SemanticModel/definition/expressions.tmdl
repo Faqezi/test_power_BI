@@ -1,0 +1,154 @@
+expression pServer = "172.20.0.39" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+	lineageTag: b91ef930-0220-47ff-b257-d8b849cfed7f
+	queryGroup: Parameters
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression pDatabase = "QI" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+	lineageTag: abcb3dd4-d1f7-48f3-b54d-5a401bdd20ff
+	queryGroup: Parameters
+
+	annotation PBI_ResultType = Text
+
+expression pSchema_general = "general" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 57b9049a-db73-40d2-a198-69e66d37da77
+	queryGroup: Parameters
+
+	annotation PBI_ResultType = Text
+
+expression pSchema_dbo = "dbo" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+	lineageTag: 28c510dd-92e4-44b9-86c1-682d4d49f624
+	queryGroup: Parameters
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression pRows = 0 meta [IsParameterQuery=true, Type="Number", IsParameterQueryRequired=true]
+	lineageTag: fc2c0242-a5a6-4bc2-a5f7-6eff7b45e63f
+	queryGroup: Parameters
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Number
+
+expression BronzeNepritomnostiZamestnancu = ```
+		let
+		    Source = Sql.Database(pServer, pDatabase, [Query="
+		   WITH nepritomnostdefinicnitabulka AS (
+		    SELECT * FROM (
+		        VALUES 
+		            (45, 'Otcovská poporodní péče'), 
+		            (54, 'Home office'), 
+		            (60, 'Překážky na straně zaměstnavatele'), 
+		            (59, 'Pracovní volno na akce pro děti a mládež'), 
+		            (88, 'Volné dny'), 
+		            (20, 'Dovolená'), 
+		            (26, 'Pracovní neschopnost'), 
+		            (25, 'Ošetřování člena rodiny'), 
+		            (22, 'Neomluvená absence'), 
+		            (27, 'Návštěva lékaře'), 
+		            (31, 'Darování krve'), 
+		            (23, 'Neplacené volno'), 
+		            (24, 'Náhradní volno'), 
+		            (61, 'Sick Day'), 
+		            (63, 'Mateřská dovolená'), 
+		            (62, 'Pohřeb'), 
+		            (55, 'Svatba'),
+		            (56, 'Rodičovská dovolená')
+		    ) AS t (kodnepritomnosti, popis)
+		),
+		
+		harmonogramnepritomnosti AS (
+		    SELECT 
+		        do.[IC],
+		        CAST([Datum Od] AS DATE) AS [Počáteční datum],
+		        CAST([Datum Od] AS DATE) AS [Datum Od],
+		
+		        -- Výpočet [Datum a čas od]
+		        CASE 
+		            WHEN [Čas od] IS NULL 
+		                THEN CAST([Datum Od] AS DATE)
+		                ELSE CAST([Datum Od] AS DATETIME) + CAST([Čas od] AS DATETIME)
+		        END AS [Datum a čas od],
+		
+		        -- Výpočet [Datum a čas do]
+		        CASE 
+		            WHEN [Čas do] IS NULL 
+		                THEN CAST([Datum Do] AS DATETIME) + CAST('23:59:00' AS DATETIME)
+		                ELSE CAST([Datum Do] AS DATETIME) + CAST([Čas do] AS DATETIME)
+		        END AS [Datum a čas do],
+		
+		        [Čas od],
+		        CAST([Datum Do] AS DATE) AS [Datum do],
+		        [Čas do],
+		        [Osoby IC] AS [Osoba Dw Id],
+		        [Popis nepřítomnosti],
+		        [Popis],
+		
+		        -- Vytvoření Display popisu
+		        CASE
+		            WHEN [Čas od] IS NULL AND [Čas do] IS NULL 
+		                THEN CONCAT('Celý den - ', [Popis], ' - ', ppv.[Celé jméno]) 
+		            WHEN [Čas od] IS NOT NULL 
+		                THEN CONCAT('Od ',CONVERT(VARCHAR(5), CAST([Čas od] AS TIME), 108), ' - Do ',CONVERT(VARCHAR(5), CAST([Čas do] AS TIME), 108) , ' - ',[Popis], ' - ', ppv.[Celé jméno])
+		        END AS [Display popis],
+		
+		        [Dovolená - dnes],
+		        [Název stavu žádosti],
+		
+		        -- Stav úkonu
+		        CASE
+		            WHEN [Název stavu žádosti] = 'Schválená' THEN 'Nepřítomnost schválená'
+		            WHEN [Název stavu žádosti] = 'Zaevidovaná' THEN 'Nepřítomnost zaevidovaná'
+		            ELSE NULL
+		        END AS [Stav úkonu],
+		
+		        ppv.[Platný PPV]
+		    
+		    FROM [QI].[hr].[Žádosti o dovolené a jiné nepřítomnosti] AS do
+		    LEFT JOIN [QI].[general].[PPV k vlastní organizaci] AS ppv 
+		        ON ppv.[Osoba IC] = do.[Osoby IC]
+		    LEFT JOIN nepritomnostdefinicnitabulka AS def 
+		        ON def.kodnepritomnosti = do.[Popis nepřítomnosti]
+		    WHERE 
+		        [Název stavu žádosti] IN ('Schválená', 'Zaevidovaná')
+		        AND ppv.[Platný PPV] = 1
+		        AND [Datum Od] >= DATEADD(DAY, 1, EOMONTH(DATEADD(MONTH, -12, GETDATE())))
+		)
+		
+		SELECT 
+		    [Počáteční datum],
+		    [Datum Od],
+		    [Čas od],
+		    [Datum a čas od],
+		    [Datum do],
+		    [Čas do],
+		    [Datum a čas do],
+		    [Osoba Dw Id],
+		    [Popis nepřítomnosti],
+		    [Popis],
+		    [Display popis],
+		    [Název stavu žádosti],
+		    [Stav úkonu]
+		FROM harmonogramnepritomnosti
+		    "]),
+		    DataType = Table.TransformColumnTypes(Source,{{"Popis nepřítomnosti", Int64.Type}, {"Počáteční datum", type date}, {"Datum Od", type date}, {"Datum do", type date}})
+		in
+		    DataType
+		```
+	lineageTag: 47e03f42-f049-48ef-9286-265323142210
+	queryGroup: Tables\Bronze
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression pSchema_hr = "hr" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 83aae735-4e91-497d-969f-bca460fb3e5c
+	queryGroup: Parameters
+
+	annotation PBI_ResultType = Text
+

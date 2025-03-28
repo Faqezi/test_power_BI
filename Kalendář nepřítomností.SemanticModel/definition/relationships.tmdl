@@ -1,0 +1,13 @@
+relationship 9d892778-5de4-55bd-e58e-6db852437c11
+	fromColumn: NepritomnostZamestnancu.'Osoba Dw Id'
+	toColumn: DimOsoby.'Realizator Dw Id'
+
+relationship 8509ea23-21fd-6bfd-7742-a0a72290cc68
+	fromColumn: NepritomnostZamestnancu.'Počáteční datum'
+	toColumn: DimKalendar.Datum
+
+relationship d2480e8b-4ac5-9ec2-2554-790ec8612126
+	toCardinality: many
+	fromColumn: DimOsoby.'Realizator Dw Id'
+	toColumn: RLS_osoby_oddeleni.'Osoba Dw Id'
+

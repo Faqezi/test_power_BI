@@ -1,0 +1,237 @@
+table DimOsoby
+	lineageTag: 2e53e51b-8778-443f-8a00-b16dd66039d4
+
+	column Jméno
+		dataType: string
+		lineageTag: e5f07321-338b-4ba7-b8e8-23d14a2f5298
+		summarizeBy: none
+		sourceColumn: Jméno
+
+		annotation SummarizationSetBy = Automatic
+
+	column Příjmení
+		dataType: string
+		lineageTag: cf52f079-ee01-459c-9865-68a481217d11
+		summarizeBy: none
+		sourceColumn: Příjmení
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Celé jméno'
+		dataType: string
+		lineageTag: 53d530a6-0714-4d8d-8b1b-7788a1b6652e
+		summarizeBy: none
+		sourceColumn: Celé jméno
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pohlaví
+		dataType: int64
+		formatString: 0
+		lineageTag: 85475371-47cc-4206-a6bf-53390d9d47f5
+		summarizeBy: none
+		sourceColumn: Pohlaví
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Osobní číslo'
+		dataType: string
+		lineageTag: 10cf83a5-da71-478b-a940-606a7ff0ba23
+		summarizeBy: none
+		sourceColumn: Osobní číslo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Zaevidoval
+		dataType: string
+		lineageTag: fb98a6c6-3383-40f4-914b-fab36489a075
+		summarizeBy: none
+		sourceColumn: Zaevidoval
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Datum zaevidování'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1885eded-15f7-473d-a1c9-d95dc7044899
+		summarizeBy: none
+		sourceColumn: Datum zaevidování
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Aktivní zaměstnanec'
+		dataType: int64
+		formatString: 0
+		lineageTag: d48eef3d-4d67-461c-80ed-f744aad2114a
+		summarizeBy: none
+		sourceColumn: Aktivní zaměstnanec
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Platný PPV'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7c6d28a6-ecc0-4308-845c-4fbe287d3adb
+		summarizeBy: none
+		sourceColumn: Platný PPV
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Typ PPV - bit'
+		dataType: int64
+		formatString: 0
+		lineageTag: a22e2feb-9f67-445f-8d42-5cdfa01015a2
+		summarizeBy: none
+		sourceColumn: Typ PPV - bit
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Typ PPV'
+		dataType: string
+		lineageTag: 1fc141ee-cd82-4ae8-8059-6e8576fce42c
+		summarizeBy: none
+		sourceColumn: Typ PPV
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Osoby - ENMON'
+		dataType: string
+		lineageTag: b8026aba-d612-4bd5-a81b-608ff6f1191c
+		summarizeBy: none
+		sourceColumn: Osoby - ENMON
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Osobní číslo2'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4a01923a-7b69-4d93-8ea1-ed2e05ed6468
+		summarizeBy: none
+		sourceColumn: Osobní číslo2
+
+		annotation SummarizationSetBy = Automatic
+
+	column MaxDatumVzniku
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 41228ead-cfd9-47bb-8bf7-5e9a0c084ef5
+		summarizeBy: none
+		sourceColumn: MaxDatumVzniku
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column MaxDatumKonce
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 64397ae1-bc0e-499d-9519-fa5c653bd452
+		summarizeBy: none
+		sourceColumn: MaxDatumKonce
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Typ Kalendaře Dw Id'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8afc62f5-f340-4c26-8166-5d0016d78132
+		summarizeBy: none
+		sourceColumn: Typ Kalendaře Dw Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Realizator Dw Id'
+		dataType: int64
+		isHidden
+		isKey
+		formatString: 0
+		lineageTag: 1c2e8402-8dd3-4c1d-9c80-5ce7f06180eb
+		summarizeBy: none
+		sourceColumn: Realizator Dw Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Název hospodářského střediska'
+		dataType: string
+		lineageTag: 2f76151e-6de7-4e9f-8e05-a505bf4c1d97
+		summarizeBy: none
+		sourceColumn: Název hospodářského střediska
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimOsoby = m
+		mode: import
+		queryGroup: Tables\Dimensions
+		source = ```
+				let
+				    Osoby = Sql.Database(pServer, pDatabase, [Query="
+				WITH AktualniPPV AS (
+				    SELECT 
+				        [Osoba IC],
+				        [Celé jméno],
+				        [Osobní číslo],
+				        MAX([Datum vzniku PPV]) AS MaxDatumVzniku,
+				        MAX([Datum konce PPV]) AS MaxDatumKonce
+				    FROM 
+				        [" & pDatabase & "].[" & pSchema_general & "].[PPV k vlastní organizaci]
+				    GROUP BY 
+				        [Osoba IC],
+				        [Celé jméno],
+				        [Osobní číslo]
+				),
+				AktualniTyp AS (
+				    SELECT 
+				        [Osoba IC],
+				        [Celé jméno],
+				        [Osobní číslo],
+				        [Datum vzniku PPV],
+				        [Datum konce PPV],
+				        [Platný PPV],
+				        [Typ PPV],
+				        [Typ PPV - bit],
+				        ROW_NUMBER() OVER (PARTITION BY [Osoba IC] ORDER BY [Typ PPV] DESC) AS 'kontrola aktuálnosti'
+				    FROM 
+				        [" & pDatabase & "].[" & pSchema_general & "].[PPV k vlastní organizaci] 
+				    WHERE 
+				        [Platný PPV] = 1
+				)
+				SELECT 
+				    [Jméno],
+				    [Příjmení],
+				    OS.[Celé jméno],
+				    [Pohlaví],
+				    OS.[Osobní číslo],
+				    [Zaevidoval],
+				    [Datum zaevidování],
+				    [Aktivní zaměstnanec],
+				    PPVALL.[Platný PPV],
+				    PPVALL.[Typ PPV - bit],
+				    PPVALL.[Typ PPV],
+				    [Osoby - ENMON],
+				    PPV.[Osobní číslo],
+				    [MaxDatumVzniku],
+				    [MaxDatumKonce],
+				    SUBSTRING([Typ kalendáře ID], 1, CHARINDEX(',', [Typ kalendáře ID]) -1) AS 'Typ Kalendaře Dw Id',
+				    OS.[ic] AS 'Realizator Dw Id',
+				    HS.[Název hospodářského střediska]
+				FROM 
+				    [" & pDatabase & "].[general].[Osoby] AS OS
+				LEFT JOIN 
+				    AktualniPPV AS PPV ON OS.[ic] = PPV.[Osoba IC]
+				LEFT JOIN 
+				    [" & pDatabase & "].[" & pSchema_dbo & "].[Hospodářská střediska] AS HS ON HS.[Hospodářské středisko] = OS.[Hospodářské středisko]
+				LEFT JOIN 
+				    AktualniTyp AS PPVALL ON PPVALL.[Osoba IC] = OS.[ic] AND PPVALL.[kontrola aktuálnosti] = 1;", CreateNavigationProperties=false]),
+				    DataType = Table.TransformColumnTypes(Osoby,{{"Typ Kalendaře Dw Id", Int64.Type}, {"MaxDatumKonce", type date}, {"MaxDatumVzniku", type date}, {"Osobní číslo2", Int64.Type}, {"Datum zaevidování", type date}})
+				in
+				    DataType
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

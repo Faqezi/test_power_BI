@@ -1,0 +1,141 @@
+table NepritomnostZamestnancu
+	lineageTag: 440253f9-6c39-4c61-88ef-2546e043336c
+
+	column 'Počáteční datum'
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 104b034f-12b4-4cac-bc59-4c23465a9aee
+		summarizeBy: none
+		sourceColumn: Počáteční datum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Datum Od'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e6b2e638-9592-4410-819f-eab3348ec473
+		summarizeBy: none
+		sourceColumn: Datum Od
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Datum do'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e4c3ce3c-bc0d-493a-a00b-1361892ed984
+		summarizeBy: none
+		sourceColumn: Datum do
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Osoba Dw Id'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e1d8bcff-a04a-4be4-8e54-80b7ef72d70b
+		summarizeBy: none
+		sourceColumn: Osoba Dw Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Popis nepřítomnosti'
+		dataType: int64
+		formatString: 0
+		lineageTag: d52cd2e2-6c24-43a6-b701-d2b77fc64c75
+		summarizeBy: none
+		sourceColumn: Popis nepřítomnosti
+
+		annotation SummarizationSetBy = Automatic
+
+	column Popis
+		dataType: string
+		lineageTag: 65a6ef7e-c6f8-441f-aab4-2f4458bfba70
+		summarizeBy: none
+		sourceColumn: Popis
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Display popis'
+		dataType: string
+		lineageTag: cbf4d33e-46de-4db3-9109-7de92a494419
+		summarizeBy: none
+		sourceColumn: Display popis
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Název stavu žádosti'
+		dataType: string
+		lineageTag: b1c94d3c-d2b3-4606-92e7-d8e288295496
+		summarizeBy: none
+		sourceColumn: Název stavu žádosti
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Stav úkonu'
+		dataType: string
+		lineageTag: 62416ee1-5054-465f-b4b0-49dc1d170521
+		summarizeBy: none
+		sourceColumn: Stav úkonu
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Čas od'
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 23dfd899-470f-404c-b59a-7d01c28afad9
+		summarizeBy: none
+		sourceColumn: Čas od
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column 'Datum a čas od'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d7294e2b-0620-4ce5-aba9-9058a63d08dc
+		summarizeBy: none
+		sourceColumn: Datum a čas od
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Čas do'
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 5a5725ed-7f9c-411c-854c-9b0bbd779cb4
+		summarizeBy: none
+		sourceColumn: Čas do
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column 'Datum a čas do'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5bc65ad9-294b-46ab-b312-c77b96479700
+		summarizeBy: none
+		sourceColumn: Datum a čas do
+
+		annotation SummarizationSetBy = Automatic
+
+	partition NepritomnostZamestnancu = m
+		mode: import
+		queryGroup: Tables\Gold
+		source =
+				let
+				    Source = BronzeNepritomnostiZamestnancu
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

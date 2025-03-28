@@ -1,0 +1,375 @@
+table DimKalendar
+	lineageTag: d98a0b2a-027c-4ebd-87c3-c3f701d22fa7
+
+	column Datum
+		dataType: dateTime
+		isKey
+		formatString: Long Date
+		lineageTag: 01b27048-2beb-41f5-8544-c01bce0789d3
+		summarizeBy: none
+		sourceColumn: Datum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'ISO Rok'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7b251ce9-64f1-4c2d-ae8c-67a28ae158e0
+		summarizeBy: none
+		sourceColumn: ISO Rok
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ISO Měsíc'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a082ef4-7b48-4462-a5ad-d480e400b5e0
+		summarizeBy: none
+		sourceColumn: ISO Měsíc
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Den v týdnu'
+		dataType: int64
+		formatString: 0
+		lineageTag: d8d7c228-9bed-4d14-ab2a-f2fc238e99d2
+		summarizeBy: none
+		sourceColumn: Den v týdnu
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Den v týdnu název'
+		dataType: string
+		lineageTag: 8571694d-d05c-4b1f-b205-42579496db91
+		summarizeBy: none
+		sourceColumn: Den v týdnu název
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pololetí
+		dataType: int64
+		formatString: 0
+		lineageTag: 967875e6-d54e-4c4a-8a2e-f32a86d2ef08
+		summarizeBy: none
+		sourceColumn: Pololetí
+
+		annotation SummarizationSetBy = Automatic
+
+	column Čtvrtletí
+		dataType: int64
+		formatString: 0
+		lineageTag: 6e80b323-fa93-45a1-b2ae-ac95039d5b6d
+		summarizeBy: none
+		sourceColumn: Čtvrtletí
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Čtvrtletí název'
+		dataType: string
+		lineageTag: 0011f800-b475-4ab8-8d7a-57fbbd2de906
+		summarizeBy: none
+		sourceColumn: Čtvrtletí název
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Týden v roce'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4b99e64c-f614-460d-ad1a-b329046b1679
+		summarizeBy: none
+		sourceColumn: Týden v roce
+
+		annotation SummarizationSetBy = Automatic
+
+	column Rok
+		dataType: int64
+		formatString: 0
+		lineageTag: 05d15645-597f-466f-863c-86f406b51f25
+		summarizeBy: none
+		sourceColumn: Rok
+
+		annotation SummarizationSetBy = Automatic
+
+	column Měsíc
+		dataType: int64
+		formatString: 0
+		lineageTag: ab90b4b4-4fc6-4d61-960b-0e06b66e8fc3
+		summarizeBy: none
+		sourceColumn: Měsíc
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Měsíc název'
+		dataType: string
+		lineageTag: 724fc059-a35c-466b-9a5c-c080f09401e5
+		summarizeBy: none
+		sourceColumn: Měsíc název
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Měsíc rok'
+		dataType: string
+		lineageTag: 31e519dc-f81f-4a73-8923-40058978d314
+		summarizeBy: none
+		sourceColumn: Měsíc rok
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Měsíc rok int'
+		dataType: int64
+		formatString: 0
+		lineageTag: b21d6ee2-284e-426b-9c45-3e297d6c455d
+		summarizeBy: none
+		sourceColumn: Měsíc rok int
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Den v měsíci'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3dc04743-52d3-48ef-bf70-6bf193df4abb
+		summarizeBy: none
+		sourceColumn: Den v měsíci
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Den v roce'
+		dataType: int64
+		formatString: 0
+		lineageTag: 19eaf01f-4113-4afe-a278-62e8e82dfec1
+		summarizeBy: none
+		sourceColumn: Den v roce
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Druh dne'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3fa9803a-6468-452a-acbf-e2bb037bf913
+		summarizeBy: none
+		sourceColumn: Druh dne
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Druh dne název'
+		dataType: string
+		lineageTag: b09e43c9-9ecf-4f63-9350-7ddf5b86dda1
+		summarizeBy: none
+		sourceColumn: Druh dne název
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rok dyn'
+		dataType: string
+		lineageTag: e7ce86d8-3442-4106-914d-e73ccfeece8f
+		summarizeBy: none
+		sourceColumn: Rok dyn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Čtvrtletí dyn'
+		dataType: string
+		lineageTag: 5d152503-7537-46d5-93bf-f0d96585f4b4
+		summarizeBy: none
+		sourceColumn: Čtvrtletí dyn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pololetí název dyn'
+		dataType: string
+		lineageTag: ccaf9ee2-cedd-4662-995b-4c18e9353ff4
+		summarizeBy: none
+		sourceColumn: Pololetí název dyn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Měsíc název dyn'
+		dataType: string
+		lineageTag: 0181c4c6-1d62-4e35-9658-37e3d75ee950
+		summarizeBy: none
+		sourceColumn: Měsíc název dyn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Den název dyn'
+		dataType: string
+		lineageTag: 3ae36047-dae9-4b56-a1b0-9f2a98b9779c
+		summarizeBy: none
+		sourceColumn: Den název dyn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Týden Index'
+		dataType: int64
+		formatString: 0
+		lineageTag: 03801db3-483d-4567-8e5c-b010ed693746
+		summarizeBy: none
+		sourceColumn: Týden Index
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Aktuální týden zpětně'
+		dataType: int64
+		formatString: 0
+		lineageTag: 924ae2e8-6471-46f7-96c5-973a002cdbc2
+		summarizeBy: none
+		sourceColumn: Aktuální týden zpětně
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Skupina po 4 týdnech'
+		dataType: string
+		lineageTag: 516bcbc2-baf3-4c6b-aaae-05e0ffac62e9
+		summarizeBy: none
+		sourceColumn: Skupina po 4 týdnech
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Poslední 3 měsíce'
+		dataType: string
+		lineageTag: 6c9e8545-a51a-4841-82a4-c5b0128f2ca5
+		summarizeBy: none
+		sourceColumn: Poslední 3 měsíce
+
+		annotation SummarizationSetBy = Automatic
+
+	column L13M
+		dataType: string
+		lineageTag: 96eea937-7d98-434a-96c8-c8f80160f0c1
+		summarizeBy: none
+		sourceColumn: L13M
+
+		annotation SummarizationSetBy = Automatic
+
+	column L12M
+		dataType: string
+		lineageTag: 734dd579-86e4-4969-a8b0-dd5e38562b19
+		summarizeBy: none
+		sourceColumn: L12M
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sort Index Skup 4. týdnů'
+		dataType: int64
+		formatString: 0
+		lineageTag: cf983cec-21e1-47ee-b410-6735d75022a8
+		summarizeBy: none
+		sourceColumn: Sort Index Skup 4. týdnů
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimKalendar = m
+		mode: import
+		queryGroup: Tables\Dimensions
+		source = ```
+				let
+				    Source = Sql.Database(pServer, pDatabase, [Query="
+				SET DATEFIRST 1;
+				
+				SELECT 
+				    CAST([Datum] AS DATE) AS 'Datum',
+				    YEAR(DATEADD(DAY, 4 - DATEPART(WEEKDAY, [Datum]), [Datum])) AS 'ISO Rok',
+				    MONTH(DATEADD(DAY, 4 - DATEPART(WEEKDAY, [Datum]), [Datum])) AS 'ISO Měsíc',
+				    CASE 
+				        WHEN DATEPART(WEEKDAY, [Datum]) = 1 THEN 7
+				        ELSE DATEPART(WEEKDAY, [Datum]) - 1
+				    END AS 'Den v týdnu',
+				    FORMAT([Datum], 'dddd', 'cs-CZ') AS 'Den v týdnu název',
+				    [Pololetí],
+				    [Čtvrtletí],
+				    CONCAT([Čtvrtletí], 'Q') AS 'Čtvrtletí název',
+				    [Týden v roce],
+				    [Rok],
+				    [Měsíc],
+				    FORMAT([Datum], 'MMMM', 'cs-CZ') AS 'Měsíc název',
+				    CONCAT([Rok], '-', [Měsíc]) AS 'Měsíc rok',
+				    CAST(CONCAT([Rok], [Měsíc]) AS INT) AS 'Měsíc rok int',
+				    [Den] AS 'Den v měsíci',
+				    [Den v roce],
+				    [Druh dne],
+				    CASE 
+				        WHEN [Druh dne] = 1 THEN 'Pracovní den'
+				        WHEN [Druh dne] = 2 THEN 'Víkend'
+				        WHEN [Druh dne] = 3 THEN 'Státní svátek'
+				        ELSE NULL
+				    END AS 'Druh dne název',
+				
+				    -- Dynamický výpočet pro aktuální rok, pololetí, čtvrtletí a měsíc
+				    CASE 
+				        WHEN [Rok] = YEAR(GETDATE()) THEN 'Současný rok'
+				        ELSE CAST([Rok] AS VARCHAR(4))
+				    END AS 'Rok dyn',
+				    
+				    CASE 
+				        WHEN [Čtvrtletí] = DATEPART(QUARTER, GETDATE()) AND [Rok] = YEAR(GETDATE()) THEN 'Současný kvartál'
+				        ELSE CONCAT([Čtvrtletí], 'Q')
+				    END AS 'Čtvrtletí dyn',
+				    
+				    CASE 
+				        WHEN [Pololetí] = CASE WHEN DATEPART(MONTH, GETDATE()) <= 6 THEN 1 ELSE 2 END 
+				             AND [Rok] = YEAR(GETDATE()) THEN 'Současný semestr'
+				        ELSE CAST([Pololetí] AS VARCHAR(1))
+				    END AS 'Pololetí název dyn',
+				    
+				    CASE 
+				        WHEN [Měsíc] = MONTH(GETDATE()) AND [Rok] = YEAR(GETDATE()) THEN 'Současný měsíc'
+				        ELSE FORMAT([Datum], 'MMMM', 'cs-CZ')
+				    END AS 'Měsíc název dyn',
+				    
+				    CASE 
+				        WHEN CAST([Datum] AS DATE) = CAST(GETDATE() AS DATE) THEN 'Dnes'
+				        ELSE FORMAT([Datum], 'dddd', 'cs-CZ')
+				    END AS 'Den název dyn',
+				
+				    -- Index týdne od začátku kalendáře (pondělí jako začátek týdne)
+				    DATEDIFF(WEEK, '2013-01-01', DATEADD(DAY, -1, [Datum])) + 1 AS 'Týden Index',
+				
+				    -- Sloupec pro týdenní interval zpětně od aktuálního týdne
+				    CASE 
+				        WHEN DATEDIFF(WEEK, DATEADD(DAY, -1, [Datum]), GETDATE()) BETWEEN 0 AND 15 THEN 
+				            DATEDIFF(WEEK, DATEADD(DAY, -1, [Datum]), GETDATE()) + 1
+				        ELSE NULL
+				    END AS 'Aktuální týden zpětně',
+				    
+				    -- Skupina po 4 týdnech
+				    CASE 
+				        WHEN DATEDIFF(WEEK, DATEADD(DAY, -1, [Datum]), GETDATE()) BETWEEN 0 AND 15 THEN 
+				            CONCAT(CEILING((DATEDIFF(WEEK, DATEADD(DAY, -1, [Datum]), GETDATE()) + 1) / 4.0) * 4 - 3, '. - ', 
+				                   CEILING((DATEDIFF(WEEK, DATEADD(DAY, -1, [Datum]), GETDATE()) + 1) / 4.0) * 4, '. týden')
+				        ELSE NULL
+				    END AS 'Skupina po 4 týdnech',
+				
+				    -- Poslední 3 měsíce
+				    CASE 
+				        WHEN [Rok] * 12 + [Měsíc] BETWEEN (YEAR(GETDATE()) * 12 + MONTH(GETDATE()) - 3) AND 
+				                                          (YEAR(GETDATE()) * 12 + MONTH(GETDATE()) - 1)
+				        THEN 'L3M - Closed'
+				        ELSE NULL
+				    END AS 'Poslední 3 měsíce',
+				    
+				    -- Posledních 13 měsíců
+				    CASE
+				        WHEN [Datum] >= DATEADD(MONTH, -12, DATEFROMPARTS(YEAR(GETDATE()), MONTH(GETDATE()), 1)) 
+				            AND [Datum] <= EOMONTH(GETDATE()) THEN 'L13M'
+				        ELSE NULL
+				    END AS 'L13M',
+				    CASE
+				        WHEN [Datum] >= DATEADD(MONTH, -12, DATEFROMPARTS(YEAR(GETDATE()), MONTH(GETDATE()), 1))
+				            AND [Datum] <= EOMONTH(DATEADD(MONTH, -1, GETDATE())) 
+				        THEN 'L12M'
+				        ELSE NULL
+				    END AS 'L12M'
+				FROM ["& pDatabase &"].["& pSchema_general &"].[Kalendář]
+				ORDER BY [Datum] DESC", CreateNavigationProperties=false]),
+				    #"Added Conditional Column" = Table.AddColumn(Source, "Sort Index Skup 4. týdnů", each if [Skupina po 4 týdnech] = "1. - 4. týden" then 1 else if [Skupina po 4 týdnech] = "5. - 8. týden" then 2 else if [Skupina po 4 týdnech] = "9. - 12. týden" then 3 else if [Skupina po 4 týdnech] = "13. - 16. týden" then 4 else null),
+				    DataType = Table.TransformColumnTypes(#"Added Conditional Column",{{"Datum", type date}, {"Sort Index Skup 4. týdnů", Int64.Type}})
+				in
+				    DataType
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
